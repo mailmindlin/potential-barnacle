@@ -12,6 +12,7 @@
 		"dns",
 		"notifications",
 		"background",
+		"storage",
 		"https://*/*"],
 	"short_name": "PBarnacle",
 	"sockets": {

@@ -1,0 +1,33 @@
+#view-start > ul {
+	width: 100%;
+	list-style-type: none;
+	padding: 0;
+}
+#view-start li {
+	border-width: 1px;
+	border-color: rgba(255,255,255,.5);
+	border-radius: 10px;
+	border-style: solid;
+	text-align: center;
+	font-size: 24px;
+	margin: 5px 2.5% ;
+	padding: 15px 0;
+	transition: border-color .5s, background-color .5s;
+}
+#view-start li:hover {
+	border-color: white;
+	background-color: rgba(255,255,255,.3);
+}
+#view-start .view-footer {
+	left: 38%;
+	width: 24%;
+	height: 45px;
+	border-radius: 90px 90px 0 0;
+	background-color: rgba(0,0,0,.2);
+	padding: auto;
+}
+#view-start .view-footer svg {
+	position: relative;
+	width: 14px;
+	height: 14px;
+}
