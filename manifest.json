@@ -1,7 +1,6 @@
 {
 	"name": "Potential Barnacle",
-	"description": "Batch testing for website filters",
-	"default_locale": "en",
+	"description": "Networking utilities",
 	"version": "0.0.1",
 	"manifest_version": 2,
 	"app": {
@@ -9,14 +8,26 @@
 			"scripts": ["background.js"]
 		}
 	},
-	"permissions": ["dns","notifications","socket","background"],
+	"permissions": [
+		"dns",
+		"notifications",
+		"background",
+		"https://*/*"],
 	"short_name": "PBarnacle",
 	"sockets": {
 		"tcp": {
-			"connect": "*",
+			"connect": "*"
 		},
 		"udp": {
-			"connect": "*",
+			"send": "*",
+			"bind": "*",
+			"multicastMembership":""
+		},
+		"tcpServer": {
+			"listen": "*"
 		}
+	},
+	"icons": {
+		"128": "128.png"
 	}
 }
