@@ -23,8 +23,16 @@
 	width: 24%;
 	height: 45px;
 	border-radius: 90px 90px 0 0;
-	background-color: rgba(0,0,0,.2);
+	background-color: rgba(0,0,0,.1);
 	padding: auto;
+	transition: border-radius .5s, background-color .5s, height: .5s;
+}
+#view-start .view-footer:hover {
+	height: 50px;
+	width: 26%;
+	left: 37%;
+	border-radius: 100px 100px 0 0;
+	background-color: rgba(0,0,0,.2);
 }
 #view-start .view-footer svg {
 	position: relative;
