@@ -14,3 +14,6 @@ var Storage = {
 	rm: file=>(doPromise(chrome.storage.sync.remove, chrome.storage.sync, file)),
 	clear: file=>(doPromise(chrome.storage.sync.clear, chrome.storage.sync))
 };
+var View = {
+	transitionTo: (name)=>{$('.view-active:not(#view-'+name+')').removeClass('view-active');$(document.getElementById('view-'+name)).addClass('view-active');}
+}
