@@ -10,7 +10,7 @@
 	<body>
 		<div class="view" id="view-start">
 			<h1 class="view-header">Load game</h1>
-			<ul id="saved-games"></ul>
+			<ul id="saved-games" class="boring-list"></ul>
 			<div class="view-footer semicircle-down" id="new-game">
 				<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;">
 					<g>
@@ -20,8 +20,24 @@
 			</div>
 		</div>
 		<div class="view" id="view-create-game-0">
-			<input type="text" id="new-game-name" placeholder="Game name" class="centered-block"/>
-			<button style="background-color:green" class="centered-block">Continue</button>
+			<h1 class="view-header">Enter game name</h1>
+			<input type="text" id="new-game-name" placeholder="name" class="centered-block"/>
+			<button style="background-color:green" class="button-continue">Continue</button>
+		</div>
+		<div class="view" id="view-create-categories">
+			<h1 class="view-header">Enter category names</h1>
+			<ul id="category-inputs" class="boring-list">
+				<input type="text" placeholder="Category 1" class="centered-block category-name"/>
+				<input type="text" "placeholder="Category 2" class="centered-block category-name"/>
+			</ul>
+		</div>
+		<div class="view" id="view-create-values">
+			<h1 class="view-header">Enter game name</h1>
+			<input type="text" id="new-game-name" placeholder="name" class="centered-block"/>
+			<button style="background-color:green" class="button-continue">Continue</button>
+		</div>
+		<div class="view" id="view-waiting-client-join">
+			<div>Session key: <span id="session-key"></span></div>
 		</div>
 	</body>
 </html>

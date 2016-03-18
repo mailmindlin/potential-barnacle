@@ -1,8 +1,3 @@
-#view-start > ul {
-	width: 100%;
-	list-style-type: none;
-	padding: 0;
-}
 #view-start li {
 	border-width: 1px;
 	border-color: rgba(255,255,255,.5);
@@ -38,4 +33,7 @@
 	position: relative;
 	width: 14px;
 	height: 14px;
+}
+#view-create-game-0 {
+	padding-top: 25%;
 }

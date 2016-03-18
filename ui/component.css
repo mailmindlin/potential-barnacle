@@ -45,11 +45,38 @@ button {
 	padding: 20px;
 	text-align: center;
 }
+button[disabled] {
+	background-color: grey;
+}
+.button-continue {
+	width: 95%;
+	position: absolute;
+	bottom: 5%;
+	left: 2.5%;
+	right: 2.5%;
+	color: white;
+	font: 24px 'Roboto', sans-serif;
+	display: block;
+	margin: auto;
+}
 input {
-	border-width: 0;
-	border-radius: 5px;
+	background-color: rgba(0,0,0,0);
+	border-style: none;
+	border-bottom-style: solid;
+	position: relative;
+	width: 95%;
+	top: 10%;
+	height: 10%;
+	font-size: 36px;
+	outline: none;
+	text-align: center;
 }
 .centered-block {
 	display: block;
 	margin: 10px auto;
+}
+.boring-list {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
 }
