@@ -10,10 +10,7 @@
 	<body>
 		<div class="view" id="view-start">
 			<h1 class="view-header">Load game</h1>
-			<ul id="saved-games">
-				<li>Game 1</li>
-				<li>Game 2</li>
-			</ul>
+			<ul id="saved-games"></ul>
 			<div class="view-footer semicircle-down" id="new-game">
 				<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;">
 					<g>
@@ -21,6 +18,10 @@
 					</g>
 				</svg>
 			</div>
+		</div>
+		<div class="view" id="view-create-game-0">
+			<input type="text" id="new-game-name" placeholder="Game name" class="centered-block"/>
+			<button style="background-color:green" class="centered-block">Continue</button>
 		</div>
 	</body>
 </html>
