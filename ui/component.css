@@ -17,6 +17,9 @@ body {
 	bottom: 0;
 	padding-top: 43px;
 }
+.view:not(.view-active) {
+	display: none;
+}
 .view-header {
 	position: absolute;
 	top: 0;
