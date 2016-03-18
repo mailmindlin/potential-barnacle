@@ -6,7 +6,8 @@
 }
 body {
 	font-family: 'Roboto', sans-serif;
-	color: white;
+	color: #FFF;
+	background-color: #000;
 }
 .view {
 	position: fixed;
@@ -43,4 +44,12 @@ button {
 	border: 0;
 	padding: 20px;
 	text-align: center;
+}
+input {
+	border-width: 0;
+	border-radius: 5px;
+}
+.centered-block {
+	display: block;
+	margin: 10px auto;
 }
