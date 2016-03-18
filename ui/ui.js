@@ -1,5 +1,11 @@
-function loadGames() {
-	
+function updateSavedGames() {
+	Storage.get('games').then(games => {
+		if (games) {
+			var list = $('#saved-games').empty();
+			for (let game of games)
+				list.append($(ce('li')).html(game));
+		}
+	});
 }
 onload = function() {
 	var tcpServer = chrome.sockets.tcpServer;
@@ -7,5 +13,5 @@ onload = function() {
 	var udpSocket = chrome.sockets.udp;
 	
 	var viewStart = $('#view-start');
-	
+	updateSavedGames();
 };
