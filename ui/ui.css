@@ -37,3 +37,13 @@
 #view-create-game-0 {
 	padding-top: 25%;
 }
+#view-create-values table {
+	width: 100%;
+}
+#view-create-values table tr {
+	background-color: rgba(0,0,0,.1);
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 5px;
+}
